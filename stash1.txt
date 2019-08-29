@@ -1,3 +1,7 @@
 Stash跟踪的是相对于最近一次提交的未提交改动。
-只有add后被跟踪了的文件才会被stash。
+新建的问题件只有在add后被跟踪了才会被stash。
 在另一个落后的分支A上apply时，会应用stash里的全部内容，但只有在A的commit与stash所跟踪的最近一次commit的相同时才能直接应用修改，否则出现冲突需要merge 。
+
+试一下stash branch [new_branch_name]
+
+从stash创建分支成功后这个stash会被丢弃
