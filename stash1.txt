@@ -1,0 +1,3 @@
+Stash跟踪的是相对于最近一次提交的未提交改动。
+只有add后被跟踪了的文件才会被stash。
+在另一个落后的分支A上apply时，会应用stash里的全部内容，但只有在A的commit与stash所跟踪的最近一次commit的相同时才能直接应用修改，否则出现冲突需要merge 。
